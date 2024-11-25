@@ -3,62 +3,107 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>To-Do List</title>
+    <title>To-Do List App</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
+            background-color: #f9f9f9;
             margin: 0;
             padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            flex-direction: column;
         }
 
         .container {
-            background-color: white;
+            max-width: 800px;
+            margin: 20px auto;
+            background: #fff;
             padding: 20px;
             border-radius: 10px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            width: 300px;
-            margin-bottom: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
 
-        h1 {
+        h1, h2 {
             text-align: center;
-            font-size: 2rem;
+            color: #333;
+        }
+
+        p, li {
+            font-size: 1rem;
+            line-height: 1.6;
+            color: #555;
+        }
+
+        .instructions {
+            background: #f4f4f4;
+            padding: 15px;
+            border-left: 5px solid #5cb85c;
             margin-bottom: 20px;
         }
 
-        img {
+        .screenshots img {
             display: block;
-            margin: 0 auto;
-            width: 100%;
-            height: auto;
+            margin: 10px auto;
+            max-width: 100%;
             border-radius: 5px;
         }
 
         video {
             display: block;
             margin: 20px auto;
-            width: 100%;
-            height: auto;
-            border-radius: 5px;
+            max-width: 100%;
+            border-radius: 10px;
+        }
+
+        a {
+            color: #007BFF;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
 <body>
+    <div class="container">
+        <h1>To-Do List Application</h1>
+        <p>
+            Welcome to the <strong>To-Do List Application</strong>. This Python-based app lets you manage your daily tasks efficiently. You can add tasks, mark them as completed, and remove them once they're done. The app uses Tkinter to provide a graphical user interface (GUI).
+        </p>
+        
+        <h2>How to Use This Application</h2>
+        <div class="instructions">
+            <ol>
+                <li>Clone the repository:
+                    <pre><code>git clone https://github.com/RachitTyagi17/To_Do_List.git</code></pre>
+                </li>
+                <li>Navigate to the project directory:
+                    <pre><code>cd To_Do_List</code></pre>
+                </li>
+                <li>Run the application:
+                    <pre><code>python todo.py</code></pre>
+                </li>
+                <li>The To-Do List application window will open, where you can start managing your tasks!</li>
+            </ol>
+        </div>
 
-  <div class="container">
-    <h1>To-Do List</h1>
-    <p>A static preview of how your To-Do List would look.</p>
-    
-    <!-- Screenshot of the static To-Do List -->
-    <img src="assets/Screenshot_1.png" alt="To-Do List Screenshot">
-    <img src="assets/Screenshot_2.png" alt="To-Do List Screenshot">
-  </div>
+        <h2>Demo Video</h2>
+        <video controls>
+            <source src="assets/ScreenRecording.mov" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
 
+        <h2>Screenshots</h2>
+        <div class="screenshots">
+            <p>Here are some screenshots of the application:</p>
+            <img src="assets/Screenshot_1.png" alt="To-Do List Screenshot 1">
+            <img src="assets/Screenshot_2.png" alt="To-Do List Screenshot 2">
+            
+        </div>
+
+        <h2>Project Repository</h2>
+        <p>
+            The source code for this project is available on GitHub. Click <a href="https://github.com/RachitTyagi17/To_Do_List" target="_blank">here</a> to visit the repository.
+        </p>
+    </div>
 </body>
 </html>
